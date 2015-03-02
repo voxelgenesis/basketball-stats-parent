@@ -1,5 +1,6 @@
-/target
+/target*
 /.classpath
 /.settings
 /.svn
 /bin
+/.project
