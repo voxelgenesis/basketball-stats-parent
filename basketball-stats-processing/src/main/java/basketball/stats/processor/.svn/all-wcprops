@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/basketball-stats_basketball-stats/!svn/ver/67/trunk/basketball-stats-parent/basketball-stats-processing/src/main/java/basketball/stats/processor
+END
+LogProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/svn/basketball-stats_basketball-stats/!svn/ver/76/trunk/basketball-stats-parent/basketball-stats-processing/src/main/java/basketball/stats/processor/LogProcessor.java
+END
+ChunkProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/svn/basketball-stats_basketball-stats/!svn/ver/62/trunk/basketball-stats-parent/basketball-stats-processing/src/main/java/basketball/stats/processor/ChunkProcessor.java
+END
+TimeChunkProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/basketball-stats_basketball-stats/!svn/ver/74/trunk/basketball-stats-parent/basketball-stats-processing/src/main/java/basketball/stats/processor/TimeChunkProcessor.java
+END

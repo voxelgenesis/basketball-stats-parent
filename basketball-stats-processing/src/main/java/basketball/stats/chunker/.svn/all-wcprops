@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/basketball-stats_basketball-stats/!svn/ver/68/trunk/basketball-stats-parent/basketball-stats-processing/src/main/java/basketball/stats/chunker
+END
+PlayerStatsChunker.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/basketball-stats_basketball-stats/!svn/ver/62/trunk/basketball-stats-parent/basketball-stats-processing/src/main/java/basketball/stats/chunker/PlayerStatsChunker.java
+END
+GameTimeChunker.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/basketball-stats_basketball-stats/!svn/ver/18/trunk/basketball-stats-parent/basketball-stats-processing/src/main/java/basketball/stats/chunker/GameTimeChunker.java
+END
+Chunker.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/basketball-stats_basketball-stats/!svn/ver/42/trunk/basketball-stats-parent/basketball-stats-processing/src/main/java/basketball/stats/chunker/Chunker.java
+END
+MultiManChunker.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/basketball-stats_basketball-stats/!svn/ver/20/trunk/basketball-stats-parent/basketball-stats-processing/src/main/java/basketball/stats/chunker/MultiManChunker.java
+END
+PlayerStatsEntityChunker.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/basketball-stats_basketball-stats/!svn/ver/76/trunk/basketball-stats-parent/basketball-stats-processing/src/main/java/basketball/stats/chunker/PlayerStatsEntityChunker.java
+END
+GameTimePlayerStatsEntityChunker.java
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/svn/basketball-stats_basketball-stats/!svn/ver/63/trunk/basketball-stats-parent/basketball-stats-processing/src/main/java/basketball/stats/chunker/GameTimePlayerStatsEntityChunker.java
+END
+EntityChunker.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/basketball-stats_basketball-stats/!svn/ver/62/trunk/basketball-stats-parent/basketball-stats-processing/src/main/java/basketball/stats/chunker/EntityChunker.java
+END

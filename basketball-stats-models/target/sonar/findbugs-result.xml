@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.1" sequence="0" timestamp="1362934479324" analysisTimestamp="1362934487495" release="">
+  <Project>
+    <Jar>C:\Workspace\basketball-stats-parent\basketball-stats-models\target\classes</Jar>
+    <AuxClasspathEntry>C:\Workspace\basketball-stats-parent\basketball-stats-utils\target\basketball-stats-utils-0.0.2-SNAPSHOT.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\ANONYM~1\AppData\Local\Temp\findbugs3178123736413164757.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\ANONYM~1\AppData\Local\Temp\findbugs4876795903152540269.jar</AuxClasspathEntry>
+    <SrcDir>C:\Workspace\basketball-stats-parent\basketball-stats-models\src\main\java</SrcDir>
+    <WrkDir>C:\Workspace\basketball-stats-parent\basketball-stats-models\target</WrkDir>
+  </Project>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" abbrev="UuF" category="PERFORMANCE" instanceHash="4f321b13a18069020717d1acccd6353d" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="18">
+    <ShortMessage>Unused field</ShortMessage>
+    <LongMessage>Unused field: basketball.stats.models.Event.game</LongMessage>
+    <Class classname="basketball.stats.models.Event" primary="true">
+      <SourceLine classname="basketball.stats.models.Event" start="6" end="6" sourcefile="Event.java" sourcepath="basketball/stats/models/Event.java" relSourcepath="basketball\stats\models\Event.java">
+        <Message>At Event.java:[line 6]</Message>
+      </SourceLine>
+      <Message>In class basketball.stats.models.Event</Message>
+    </Class>
+    <Field classname="basketball.stats.models.Event" name="game" signature="Lbasketball/stats/models/Game;" isStatic="false" primary="true">
+      <SourceLine classname="basketball.stats.models.Event" sourcefile="Event.java" sourcepath="basketball/stats/models/Event.java" relSourcepath="basketball\stats\models\Event.java">
+        <Message>In Event.java</Message>
+      </SourceLine>
+      <Message>Field basketball.stats.models.Event.game</Message>
+    </Field>
+    <SourceLine classname="basketball.stats.models.Event" sourcefile="Event.java" sourcepath="basketball/stats/models/Event.java" relSourcepath="basketball\stats\models\Event.java" synthetic="true">
+      <Message>In Event.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" abbrev="UuF" category="PERFORMANCE" instanceHash="8e2c5f51500d140a7eae4ce690ca9013" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="18">
+    <ShortMessage>Unused field</ShortMessage>
+    <LongMessage>Unused field: basketball.stats.models.Event.opponentPoints</LongMessage>
+    <Class classname="basketball.stats.models.Event" primary="true">
+      <SourceLine classname="basketball.stats.models.Event" start="6" end="6" sourcefile="Event.java" sourcepath="basketball/stats/models/Event.java" relSourcepath="basketball\stats\models\Event.java">
+        <Message>At Event.java:[line 6]</Message>
+      </SourceLine>
+      <Message>In class basketball.stats.models.Event</Message>
+    </Class>
+    <Field classname="basketball.stats.models.Event" name="opponentPoints" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="basketball.stats.models.Event" sourcefile="Event.java" sourcepath="basketball/stats/models/Event.java" relSourcepath="basketball\stats\models\Event.java">
+        <Message>In Event.java</Message>
+      </SourceLine>
+      <Message>Field basketball.stats.models.Event.opponentPoints</Message>
+    </Field>
+    <SourceLine classname="basketball.stats.models.Event" sourcefile="Event.java" sourcepath="basketball/stats/models/Event.java" relSourcepath="basketball\stats\models\Event.java" synthetic="true">
+      <Message>In Event.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" abbrev="UuF" category="PERFORMANCE" instanceHash="c334fb14869ccc37b57668ba7981a858" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="18">
+    <ShortMessage>Unused field</ShortMessage>
+    <LongMessage>Unused field: basketball.stats.models.Event.player</LongMessage>
+    <Class classname="basketball.stats.models.Event" primary="true">
+      <SourceLine classname="basketball.stats.models.Event" start="6" end="6" sourcefile="Event.java" sourcepath="basketball/stats/models/Event.java" relSourcepath="basketball\stats\models\Event.java">
+        <Message>At Event.java:[line 6]</Message>
+      </SourceLine>
+      <Message>In class basketball.stats.models.Event</Message>
+    </Class>
+    <Field classname="basketball.stats.models.Event" name="player" signature="Lbasketball/stats/models/Player;" isStatic="false" primary="true">
+      <SourceLine classname="basketball.stats.models.Event" sourcefile="Event.java" sourcepath="basketball/stats/models/Event.java" relSourcepath="basketball\stats\models\Event.java">
+        <Message>In Event.java</Message>
+      </SourceLine>
+      <Message>Field basketball.stats.models.Event.player</Message>
+    </Field>
+    <SourceLine classname="basketball.stats.models.Event" sourcefile="Event.java" sourcepath="basketball/stats/models/Event.java" relSourcepath="basketball\stats\models\Event.java" synthetic="true">
+      <Message>In Event.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" abbrev="UuF" category="PERFORMANCE" instanceHash="6194cff08b099a710b5062a368bc7179" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="18">
+    <ShortMessage>Unused field</ShortMessage>
+    <LongMessage>Unused field: basketball.stats.models.Event.points</LongMessage>
+    <Class classname="basketball.stats.models.Event" primary="true">
+      <SourceLine classname="basketball.stats.models.Event" start="6" end="6" sourcefile="Event.java" sourcepath="basketball/stats/models/Event.java" relSourcepath="basketball\stats\models\Event.java">
+        <Message>At Event.java:[line 6]</Message>
+      </SourceLine>
+      <Message>In class basketball.stats.models.Event</Message>
+    </Class>
+    <Field classname="basketball.stats.models.Event" name="points" signature="I" isStatic="false" primary="true">
+      <SourceLine classname="basketball.stats.models.Event" sourcefile="Event.java" sourcepath="basketball/stats/models/Event.java" relSourcepath="basketball\stats\models\Event.java">
+        <Message>In Event.java</Message>
+      </SourceLine>
+      <Message>Field basketball.stats.models.Event.points</Message>
+    </Field>
+    <SourceLine classname="basketball.stats.models.Event" sourcefile="Event.java" sourcepath="basketball/stats/models/Event.java" relSourcepath="basketball\stats\models\Event.java" synthetic="true">
+      <Message>In Event.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" abbrev="UuF" category="PERFORMANCE" instanceHash="16f07f8ec0a06df2a1f950765fd201b0" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="18">
+    <ShortMessage>Unused field</ShortMessage>
+    <LongMessage>Unused field: basketball.stats.models.Event.possession</LongMessage>
+    <Class classname="basketball.stats.models.Event" primary="true">
+      <SourceLine classname="basketball.stats.models.Event" start="6" end="6" sourcefile="Event.java" sourcepath="basketball/stats/models/Event.java" relSourcepath="basketball\stats\models\Event.java">
+        <Message>At Event.java:[line 6]</Message>
+      </SourceLine>
+      <Message>In class basketball.stats.models.Event</Message>
+    </Class>
+    <Field classname="basketball.stats.models.Event" name="possession" signature="Lbasketball/stats/enums/Possession;" isStatic="false" primary="true">
+      <SourceLine classname="basketball.stats.models.Event" sourcefile="Event.java" sourcepath="basketball/stats/models/Event.java" relSourcepath="basketball\stats\models\Event.java">
+        <Message>In Event.java</Message>
+      </SourceLine>
+      <Message>Field basketball.stats.models.Event.possession</Message>
+    </Field>
+    <SourceLine classname="basketball.stats.models.Event" sourcefile="Event.java" sourcepath="basketball/stats/models/Event.java" relSourcepath="basketball\stats\models\Event.java" synthetic="true">
+      <Message>In Event.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" abbrev="UuF" category="PERFORMANCE" instanceHash="6c56622846095400ac93486b63626dc4" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="18">
+    <ShortMessage>Unused field</ShortMessage>
+    <LongMessage>Unused field: basketball.stats.models.Event.time</LongMessage>
+    <Class classname="basketball.stats.models.Event" primary="true">
+      <SourceLine classname="basketball.stats.models.Event" start="6" end="6" sourcefile="Event.java" sourcepath="basketball/stats/models/Event.java" relSourcepath="basketball\stats\models\Event.java">
+        <Message>At Event.java:[line 6]</Message>
+      </SourceLine>
+      <Message>In class basketball.stats.models.Event</Message>
+    </Class>
+    <Field classname="basketball.stats.models.Event" name="time" signature="Lbasketball/stats/util/GameTime;" isStatic="false" primary="true">
+      <SourceLine classname="basketball.stats.models.Event" sourcefile="Event.java" sourcepath="basketball/stats/models/Event.java" relSourcepath="basketball\stats\models\Event.java">
+        <Message>In Event.java</Message>
+      </SourceLine>
+      <Message>Field basketball.stats.models.Event.time</Message>
+    </Field>
+    <SourceLine classname="basketball.stats.models.Event" sourcefile="Event.java" sourcepath="basketball/stats/models/Event.java" relSourcepath="basketball\stats\models\Event.java" synthetic="true">
+      <Message>In Event.java</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="UUF_UNUSED_FIELD" abbrev="UuF" category="PERFORMANCE">
+    <ShortDescription>Unused field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This field is never used.&nbsp; Consider removing it from the class.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="UuF">
+    <Description>Unused field</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 10 Mar 2013 11:54:39 -0500" total_classes="10" referenced_classes="31" total_bugs="6" total_size="220" num_packages="2" vm_version="23.0-b21" cpu_seconds="5.63" clock_seconds="1.92" peak_mbytes="335.35" alloc_mbytes="3623.12" gc_seconds="0.00" priority_2="6">
+    <FileStats path="basketball/stats/enums/EventDetail.java" bugCount="0" size="83"/>
+    <FileStats path="basketball/stats/enums/EventType.java" bugCount="0" size="22"/>
+    <FileStats path="basketball/stats/enums/Players.java" bugCount="0" size="24"/>
+    <FileStats path="basketball/stats/enums/Possession.java" bugCount="0" size="10"/>
+    <FileStats path="basketball/stats/enums/Quarter.java" bugCount="0" size="25"/>
+    <FileStats path="basketball/stats/enums/Teams.java" bugCount="0" size="38"/>
+    <FileStats path="basketball/stats/models/Event.java" bugCount="6" size="9" bugHash="896545a2fed64be0df5314903961ef4f"/>
+    <FileStats path="basketball/stats/models/Game.java" bugCount="0" size="3"/>
+    <FileStats path="basketball/stats/models/Player.java" bugCount="0" size="3"/>
+    <FileStats path="basketball/stats/models/Season.java" bugCount="0" size="3"/>
+    <PackageStats package="basketball.stats.enums" total_bugs="0" total_types="6" total_size="202">
+      <ClassStats class="basketball.stats.enums.EventDetail" sourceFile="EventDetail.java" interface="false" size="83" bugs="0"/>
+      <ClassStats class="basketball.stats.enums.EventType" sourceFile="EventType.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="basketball.stats.enums.Players" sourceFile="Players.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="basketball.stats.enums.Possession" sourceFile="Possession.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="basketball.stats.enums.Quarter" sourceFile="Quarter.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="basketball.stats.enums.Teams" sourceFile="Teams.java" interface="false" size="38" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="basketball.stats.models" total_bugs="6" total_types="4" total_size="18" priority_2="6">
+      <ClassStats class="basketball.stats.models.Event" sourceFile="Event.java" interface="false" size="9" bugs="6" priority_2="6"/>
+      <ClassStats class="basketball.stats.models.Game" sourceFile="Game.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="basketball.stats.models.Player" sourceFile="Player.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="basketball.stats.models.Season" sourceFile="Season.java" interface="false" size="3" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="207" invocations="306" avgMicrosecondsPerInvocation="676" maxMicrosecondsPerInvocation="14258" standardDeviationMircosecondsPerInvocation="1362"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="134" invocations="31" avgMicrosecondsPerInvocation="4327" maxMicrosecondsPerInvocation="44541" standardDeviationMircosecondsPerInvocation="10993"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="88" invocations="31" avgMicrosecondsPerInvocation="2843" maxMicrosecondsPerInvocation="30584" standardDeviationMircosecondsPerInvocation="6692"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="80" invocations="31" avgMicrosecondsPerInvocation="2594" maxMicrosecondsPerInvocation="17148" standardDeviationMircosecondsPerInvocation="4408"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="71" invocations="31" avgMicrosecondsPerInvocation="2300" maxMicrosecondsPerInvocation="16504" standardDeviationMircosecondsPerInvocation="4044"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="61" invocations="31" avgMicrosecondsPerInvocation="1992" maxMicrosecondsPerInvocation="14882" standardDeviationMircosecondsPerInvocation="3551"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="60" invocations="31" avgMicrosecondsPerInvocation="1955" maxMicrosecondsPerInvocation="19875" standardDeviationMircosecondsPerInvocation="4045"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="59" invocations="309" avgMicrosecondsPerInvocation="192" maxMicrosecondsPerInvocation="867" standardDeviationMircosecondsPerInvocation="85"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="48" invocations="31" avgMicrosecondsPerInvocation="1580" maxMicrosecondsPerInvocation="8061" standardDeviationMircosecondsPerInvocation="2268"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="42" invocations="31" avgMicrosecondsPerInvocation="1361" maxMicrosecondsPerInvocation="8956" standardDeviationMircosecondsPerInvocation="2353"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="33" invocations="31" avgMicrosecondsPerInvocation="1074" maxMicrosecondsPerInvocation="7863" standardDeviationMircosecondsPerInvocation="1975"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="30" invocations="90" avgMicrosecondsPerInvocation="335" maxMicrosecondsPerInvocation="1619" standardDeviationMircosecondsPerInvocation="321"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="29" invocations="31" avgMicrosecondsPerInvocation="948" maxMicrosecondsPerInvocation="25441" standardDeviationMircosecondsPerInvocation="4474"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="26" invocations="29" avgMicrosecondsPerInvocation="928" maxMicrosecondsPerInvocation="7150" standardDeviationMircosecondsPerInvocation="1640"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="25" invocations="31" avgMicrosecondsPerInvocation="811" maxMicrosecondsPerInvocation="6064" standardDeviationMircosecondsPerInvocation="1448"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="25" invocations="292" avgMicrosecondsPerInvocation="85" maxMicrosecondsPerInvocation="1174" standardDeviationMircosecondsPerInvocation="152"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="18" invocations="31" avgMicrosecondsPerInvocation="612" maxMicrosecondsPerInvocation="2544" standardDeviationMircosecondsPerInvocation="874"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="18" invocations="47" avgMicrosecondsPerInvocation="401" maxMicrosecondsPerInvocation="9769" standardDeviationMircosecondsPerInvocation="1422"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="18" invocations="31" avgMicrosecondsPerInvocation="592" maxMicrosecondsPerInvocation="5267" standardDeviationMircosecondsPerInvocation="1100"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="17" invocations="31" avgMicrosecondsPerInvocation="563" maxMicrosecondsPerInvocation="3801" standardDeviationMircosecondsPerInvocation="953"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

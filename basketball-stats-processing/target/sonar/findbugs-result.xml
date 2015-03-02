@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.1" sequence="0" timestamp="1362934481149" analysisTimestamp="1362934505149" release="">
+  <Project>
+    <Jar>C:\Workspace\basketball-stats-parent\basketball-stats-processing\target\classes</Jar>
+    <AuxClasspathEntry>C:\Workspace\basketball-stats-parent\basketball-stats-models\target\basketball-stats-models-0.0.2-SNAPSHOT.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Workspace\basketball-stats-parent\basketball-stats-utils\target\basketball-stats-utils-0.0.2-SNAPSHOT.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Repository\org\springframework\spring-core\3.1.2.RELEASE\spring-core-3.1.2.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Repository\org\springframework\spring-asm\3.1.2.RELEASE\spring-asm-3.1.2.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Repository\junit\junit\4.9\junit-4.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\ANONYM~1\AppData\Local\Temp\findbugs594437100350360598.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\ANONYM~1\AppData\Local\Temp\findbugs292935409464058366.jar</AuxClasspathEntry>
+    <SrcDir>C:\Workspace\basketball-stats-parent\basketball-stats-processing\src\main\java</SrcDir>
+    <WrkDir>C:\Workspace\basketball-stats-parent\basketball-stats-processing\target</WrkDir>
+  </Project>
+  <BugInstance type="BC_IMPOSSIBLE_CAST" priority="1" abbrev="BC" category="CORRECTNESS" instanceHash="c5f7bbddba61bb56d56fa80d1c3188ec" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="9">
+    <ShortMessage>Impossible cast</ShortMessage>
+    <LongMessage>Impossible cast from String to java.util.List in basketball.stats.models.EntityChunk.getValue(String)</LongMessage>
+    <Class classname="basketball.stats.models.EntityChunk" primary="true">
+      <SourceLine classname="basketball.stats.models.EntityChunk" start="8" end="36" sourcefile="EntityChunk.java" sourcepath="basketball/stats/models/EntityChunk.java" relSourcepath="basketball\stats\models\EntityChunk.java">
+        <Message>At EntityChunk.java:[lines 8-36]</Message>
+      </SourceLine>
+      <Message>In class basketball.stats.models.EntityChunk</Message>
+    </Class>
+    <Method classname="basketball.stats.models.EntityChunk" name="getValue" signature="(Ljava/lang/String;)Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="basketball.stats.models.EntityChunk" start="13" end="13" startBytecode="0" endBytecode="5" sourcefile="EntityChunk.java" sourcepath="basketball/stats/models/EntityChunk.java" relSourcepath="basketball\stats\models\EntityChunk.java"/>
+      <Message>In method basketball.stats.models.EntityChunk.getValue(String)</Message>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="110" end="3049" sourcefile="String.java" sourcepath="java/lang/String.java">
+        <Message>At String.java:[lines 110-3049]</Message>
+      </SourceLine>
+      <Message>Actual type String</Message>
+    </Type>
+    <Type descriptor="Ljava/util/List;" role="TYPE_EXPECTED">
+      <SourceLine classname="java.util.List" sourcefile="List.java" sourcepath="java/util/List.java">
+        <Message>In List.java</Message>
+      </SourceLine>
+      <Message>Expected java.util.List</Message>
+    </Type>
+    <Method classname="org.springframework.util.MultiValueMap" name="get" signature="(Ljava/lang/Object;)Ljava/lang/Object;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="org.springframework.util.MultiValueMap" sourcefile="MultiValueMap.java" sourcepath="org/springframework/util/MultiValueMap.java"/>
+      <Message>Return value of org.springframework.util.MultiValueMap.get(Object)</Message>
+    </Method>
+    <SourceLine classname="basketball.stats.models.EntityChunk" primary="true" start="13" end="13" startBytecode="10" endBytecode="10" sourcefile="EntityChunk.java" sourcepath="basketball/stats/models/EntityChunk.java" relSourcepath="basketball\stats\models\EntityChunk.java">
+      <Message>At EntityChunk.java:[line 13]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_STRING_CTOR" priority="2" abbrev="Dm" category="PERFORMANCE" instanceHash="eac3e28bfd1f9cabadb76a726956eaa3" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="18">
+    <ShortMessage>Method invokes inefficient new String(String) constructor</ShortMessage>
+    <LongMessage>basketball.stats.models.StatsChunk.toString() invokes inefficient new String(String) constructor</LongMessage>
+    <Class classname="basketball.stats.models.StatsChunk" primary="true">
+      <SourceLine classname="basketball.stats.models.StatsChunk" start="11" end="448" sourcefile="StatsChunk.java" sourcepath="basketball/stats/models/StatsChunk.java" relSourcepath="basketball\stats\models\StatsChunk.java">
+        <Message>At StatsChunk.java:[lines 11-448]</Message>
+      </SourceLine>
+      <Message>In class basketball.stats.models.StatsChunk</Message>
+    </Class>
+    <Method classname="basketball.stats.models.StatsChunk" name="toString" signature="()Ljava/lang/String;" isStatic="false" primary="true">
+      <SourceLine classname="basketball.stats.models.StatsChunk" start="406" end="406" startBytecode="0" endBytecode="1679" sourcefile="StatsChunk.java" sourcepath="basketball/stats/models/StatsChunk.java" relSourcepath="basketball\stats\models\StatsChunk.java"/>
+      <Message>In method basketball.stats.models.StatsChunk.toString()</Message>
+    </Method>
+    <SourceLine classname="basketball.stats.models.StatsChunk" primary="true" start="406" end="406" startBytecode="799" endBytecode="799" sourcefile="StatsChunk.java" sourcepath="basketball/stats/models/StatsChunk.java" relSourcepath="basketball\stats\models\StatsChunk.java">
+      <Message>At StatsChunk.java:[line 406]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" abbrev="DLS" category="STYLE" instanceHash="faa6eb963fc30e4b2db60084c87eadd8" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="15">
+    <ShortMessage>Dead store to local variable</ShortMessage>
+    <LongMessage>Dead store to firstQuarter in basketball.stats.processor.TimeChunkProcessor.main(String[])</LongMessage>
+    <Class classname="basketball.stats.processor.TimeChunkProcessor" primary="true">
+      <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" start="30" end="449" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java">
+        <Message>At TimeChunkProcessor.java:[lines 30-449]</Message>
+      </SourceLine>
+      <Message>In class basketball.stats.processor.TimeChunkProcessor</Message>
+    </Class>
+    <Method classname="basketball.stats.processor.TimeChunkProcessor" name="main" signature="([Ljava/lang/String;)V" isStatic="true" primary="true">
+      <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" start="395" end="449" startBytecode="0" endBytecode="269" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java"/>
+      <Message>In method basketball.stats.processor.TimeChunkProcessor.main(String[])</Message>
+    </Method>
+    <LocalVariable name="firstQuarter" register="3" pc="45" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named firstQuarter</Message>
+    </LocalVariable>
+    <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" primary="true" start="399" end="399" startBytecode="44" endBytecode="44" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java">
+      <Message>At TimeChunkProcessor.java:[line 399]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="firstQuarter"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" abbrev="DLS" category="STYLE" instanceHash="59c152875bbcd9a3fbcda1596a2557ea" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="15">
+    <ShortMessage>Dead store to local variable</ShortMessage>
+    <LongMessage>Dead store to fourthQuarter in basketball.stats.processor.TimeChunkProcessor.main(String[])</LongMessage>
+    <Class classname="basketball.stats.processor.TimeChunkProcessor" primary="true">
+      <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" start="30" end="449" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java">
+        <Message>At TimeChunkProcessor.java:[lines 30-449]</Message>
+      </SourceLine>
+      <Message>In class basketball.stats.processor.TimeChunkProcessor</Message>
+    </Class>
+    <Method classname="basketball.stats.processor.TimeChunkProcessor" name="main" signature="([Ljava/lang/String;)V" isStatic="true" primary="true">
+      <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" start="395" end="449" startBytecode="0" endBytecode="269" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java"/>
+      <Message>In method basketball.stats.processor.TimeChunkProcessor.main(String[])</Message>
+    </Method>
+    <LocalVariable name="fourthQuarter" register="6" pc="144" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named fourthQuarter</Message>
+    </LocalVariable>
+    <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" primary="true" start="402" end="402" startBytecode="142" endBytecode="142" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java">
+      <Message>At TimeChunkProcessor.java:[line 402]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="fourthQuarter"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" abbrev="DLS" category="STYLE" instanceHash="a887f503dc099b9be9aba8a70f922664" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="15">
+    <ShortMessage>Dead store to local variable</ShortMessage>
+    <LongMessage>Dead store to lastFirstQuarter in basketball.stats.processor.TimeChunkProcessor.main(String[])</LongMessage>
+    <Class classname="basketball.stats.processor.TimeChunkProcessor" primary="true">
+      <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" start="30" end="449" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java">
+        <Message>At TimeChunkProcessor.java:[lines 30-449]</Message>
+      </SourceLine>
+      <Message>In class basketball.stats.processor.TimeChunkProcessor</Message>
+    </Class>
+    <Method classname="basketball.stats.processor.TimeChunkProcessor" name="main" signature="([Ljava/lang/String;)V" isStatic="true" primary="true">
+      <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" start="395" end="449" startBytecode="0" endBytecode="269" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java"/>
+      <Message>In method basketball.stats.processor.TimeChunkProcessor.main(String[])</Message>
+    </Method>
+    <LocalVariable name="lastFirstQuarter" register="10" pc="276" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named lastFirstQuarter</Message>
+    </LocalVariable>
+    <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" primary="true" start="407" end="407" startBytecode="274" endBytecode="274" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java">
+      <Message>At TimeChunkProcessor.java:[line 407]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="lastFirstQuarter"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" abbrev="DLS" category="STYLE" instanceHash="2994d4d7e5d0d89dc717b1d07d67e8cc" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="15">
+    <ShortMessage>Dead store to local variable</ShortMessage>
+    <LongMessage>Dead store to lastFive in basketball.stats.processor.TimeChunkProcessor.main(String[])</LongMessage>
+    <Class classname="basketball.stats.processor.TimeChunkProcessor" primary="true">
+      <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" start="30" end="449" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java">
+        <Message>At TimeChunkProcessor.java:[lines 30-449]</Message>
+      </SourceLine>
+      <Message>In class basketball.stats.processor.TimeChunkProcessor</Message>
+    </Class>
+    <Method classname="basketball.stats.processor.TimeChunkProcessor" name="main" signature="([Ljava/lang/String;)V" isStatic="true" primary="true">
+      <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" start="395" end="449" startBytecode="0" endBytecode="269" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java"/>
+      <Message>In method basketball.stats.processor.TimeChunkProcessor.main(String[])</Message>
+    </Method>
+    <LocalVariable name="lastFive" register="9" pc="242" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named lastFive</Message>
+    </LocalVariable>
+    <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" primary="true" start="405" end="405" startBytecode="240" endBytecode="240" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java">
+      <Message>At TimeChunkProcessor.java:[line 405]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="lastFive"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" abbrev="DLS" category="STYLE" instanceHash="aedb06718e5f4e2041bec82c45547a" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="15">
+    <ShortMessage>Dead store to local variable</ShortMessage>
+    <LongMessage>Dead store to lastFourthQuarter in basketball.stats.processor.TimeChunkProcessor.main(String[])</LongMessage>
+    <Class classname="basketball.stats.processor.TimeChunkProcessor" primary="true">
+      <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" start="30" end="449" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java">
+        <Message>At TimeChunkProcessor.java:[lines 30-449]</Message>
+      </SourceLine>
+      <Message>In class basketball.stats.processor.TimeChunkProcessor</Message>
+    </Class>
+    <Method classname="basketball.stats.processor.TimeChunkProcessor" name="main" signature="([Ljava/lang/String;)V" isStatic="true" primary="true">
+      <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" start="395" end="449" startBytecode="0" endBytecode="269" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java"/>
+      <Message>In method basketball.stats.processor.TimeChunkProcessor.main(String[])</Message>
+    </Method>
+    <LocalVariable name="lastFourthQuarter" register="13" pc="378" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named lastFourthQuarter</Message>
+    </LocalVariable>
+    <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" primary="true" start="410" end="410" startBytecode="376" endBytecode="376" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java">
+      <Message>At TimeChunkProcessor.java:[line 410]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="lastFourthQuarter"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" abbrev="DLS" category="STYLE" instanceHash="4ad5980b81b65e9bb0cf645897633f23" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="15">
+    <ShortMessage>Dead store to local variable</ShortMessage>
+    <LongMessage>Dead store to lastSecondQuarter in basketball.stats.processor.TimeChunkProcessor.main(String[])</LongMessage>
+    <Class classname="basketball.stats.processor.TimeChunkProcessor" primary="true">
+      <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" start="30" end="449" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java">
+        <Message>At TimeChunkProcessor.java:[lines 30-449]</Message>
+      </SourceLine>
+      <Message>In class basketball.stats.processor.TimeChunkProcessor</Message>
+    </Class>
+    <Method classname="basketball.stats.processor.TimeChunkProcessor" name="main" signature="([Ljava/lang/String;)V" isStatic="true" primary="true">
+      <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" start="395" end="449" startBytecode="0" endBytecode="269" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java"/>
+      <Message>In method basketball.stats.processor.TimeChunkProcessor.main(String[])</Message>
+    </Method>
+    <LocalVariable name="lastSecondQuarter" register="11" pc="310" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named lastSecondQuarter</Message>
+    </LocalVariable>
+    <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" primary="true" start="408" end="408" startBytecode="308" endBytecode="308" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java">
+      <Message>At TimeChunkProcessor.java:[line 408]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="lastSecondQuarter"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" abbrev="DLS" category="STYLE" instanceHash="28b25db393b6c4d3ab991cc61f5ee527" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="15">
+    <ShortMessage>Dead store to local variable</ShortMessage>
+    <LongMessage>Dead store to lastThirdQuarter in basketball.stats.processor.TimeChunkProcessor.main(String[])</LongMessage>
+    <Class classname="basketball.stats.processor.TimeChunkProcessor" primary="true">
+      <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" start="30" end="449" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java">
+        <Message>At TimeChunkProcessor.java:[lines 30-449]</Message>
+      </SourceLine>
+      <Message>In class basketball.stats.processor.TimeChunkProcessor</Message>
+    </Class>
+    <Method classname="basketball.stats.processor.TimeChunkProcessor" name="main" signature="([Ljava/lang/String;)V" isStatic="true" primary="true">
+      <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" start="395" end="449" startBytecode="0" endBytecode="269" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java"/>
+      <Message>In method basketball.stats.processor.TimeChunkProcessor.main(String[])</Message>
+    </Method>
+    <LocalVariable name="lastThirdQuarter" register="12" pc="344" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named lastThirdQuarter</Message>
+    </LocalVariable>
+    <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" primary="true" start="409" end="409" startBytecode="342" endBytecode="342" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java">
+      <Message>At TimeChunkProcessor.java:[line 409]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="lastThirdQuarter"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" abbrev="DLS" category="STYLE" instanceHash="1642d85a6e052e84d0b1e9985fcdd4f4" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="15">
+    <ShortMessage>Dead store to local variable</ShortMessage>
+    <LongMessage>Dead store to overtimeQuarter in basketball.stats.processor.TimeChunkProcessor.main(String[])</LongMessage>
+    <Class classname="basketball.stats.processor.TimeChunkProcessor" primary="true">
+      <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" start="30" end="449" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java">
+        <Message>At TimeChunkProcessor.java:[lines 30-449]</Message>
+      </SourceLine>
+      <Message>In class basketball.stats.processor.TimeChunkProcessor</Message>
+    </Class>
+    <Method classname="basketball.stats.processor.TimeChunkProcessor" name="main" signature="([Ljava/lang/String;)V" isStatic="true" primary="true">
+      <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" start="395" end="449" startBytecode="0" endBytecode="269" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java"/>
+      <Message>In method basketball.stats.processor.TimeChunkProcessor.main(String[])</Message>
+    </Method>
+    <LocalVariable name="overtimeQuarter" register="7" pc="177" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named overtimeQuarter</Message>
+    </LocalVariable>
+    <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" primary="true" start="403" end="403" startBytecode="175" endBytecode="175" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java">
+      <Message>At TimeChunkProcessor.java:[line 403]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="overtimeQuarter"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" abbrev="DLS" category="STYLE" instanceHash="6b9df5cba684869cc0af853bb0205ad2" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="15">
+    <ShortMessage>Dead store to local variable</ShortMessage>
+    <LongMessage>Dead store to secondQuarter in basketball.stats.processor.TimeChunkProcessor.main(String[])</LongMessage>
+    <Class classname="basketball.stats.processor.TimeChunkProcessor" primary="true">
+      <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" start="30" end="449" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java">
+        <Message>At TimeChunkProcessor.java:[lines 30-449]</Message>
+      </SourceLine>
+      <Message>In class basketball.stats.processor.TimeChunkProcessor</Message>
+    </Class>
+    <Method classname="basketball.stats.processor.TimeChunkProcessor" name="main" signature="([Ljava/lang/String;)V" isStatic="true" primary="true">
+      <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" start="395" end="449" startBytecode="0" endBytecode="269" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java"/>
+      <Message>In method basketball.stats.processor.TimeChunkProcessor.main(String[])</Message>
+    </Method>
+    <LocalVariable name="secondQuarter" register="4" pc="78" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named secondQuarter</Message>
+    </LocalVariable>
+    <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" primary="true" start="400" end="400" startBytecode="76" endBytecode="76" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java">
+      <Message>At TimeChunkProcessor.java:[line 400]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="secondQuarter"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" abbrev="DLS" category="STYLE" instanceHash="8400db9194d493f0b7e2463548f9ca11" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="15">
+    <ShortMessage>Dead store to local variable</ShortMessage>
+    <LongMessage>Dead store to thirdQuarter in basketball.stats.processor.TimeChunkProcessor.main(String[])</LongMessage>
+    <Class classname="basketball.stats.processor.TimeChunkProcessor" primary="true">
+      <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" start="30" end="449" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java">
+        <Message>At TimeChunkProcessor.java:[lines 30-449]</Message>
+      </SourceLine>
+      <Message>In class basketball.stats.processor.TimeChunkProcessor</Message>
+    </Class>
+    <Method classname="basketball.stats.processor.TimeChunkProcessor" name="main" signature="([Ljava/lang/String;)V" isStatic="true" primary="true">
+      <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" start="395" end="449" startBytecode="0" endBytecode="269" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java"/>
+      <Message>In method basketball.stats.processor.TimeChunkProcessor.main(String[])</Message>
+    </Method>
+    <LocalVariable name="thirdQuarter" register="5" pc="111" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named thirdQuarter</Message>
+    </LocalVariable>
+    <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" primary="true" start="401" end="401" startBytecode="109" endBytecode="109" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java">
+      <Message>At TimeChunkProcessor.java:[line 401]</Message>
+    </SourceLine>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="thirdQuarter"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" abbrev="DMI" category="STYLE" instanceHash="306ea0333aef75c8a118b425df083e1d" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="17">
+    <ShortMessage>Code contains a hard coded reference to an absolute pathname</ShortMessage>
+    <LongMessage>Hard coded reference to an absolute pathname in basketball.stats.processor.TimeChunkProcessor.retrieveGameFilePaths(List)</LongMessage>
+    <Class classname="basketball.stats.processor.TimeChunkProcessor" primary="true">
+      <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" start="30" end="449" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java">
+        <Message>At TimeChunkProcessor.java:[lines 30-449]</Message>
+      </SourceLine>
+      <Message>In class basketball.stats.processor.TimeChunkProcessor</Message>
+    </Class>
+    <Method classname="basketball.stats.processor.TimeChunkProcessor" name="retrieveGameFilePaths" signature="(Ljava/util/List;)Ljava/util/List;" isStatic="false" primary="true">
+      <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" start="95" end="109" startBytecode="0" endBytecode="68" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java"/>
+      <Message>In method basketball.stats.processor.TimeChunkProcessor.retrieveGameFilePaths(List)</Message>
+    </Method>
+    <String value="C:/Users/Anonymous/Desktop/games/" role="FILE_NAME">
+      <Message>File name C:/Users/Anonymous/Desktop/games/</Message>
+    </String>
+    <SourceLine classname="basketball.stats.processor.TimeChunkProcessor" primary="true" start="95" end="95" startBytecode="6" endBytecode="6" sourcefile="TimeChunkProcessor.java" sourcepath="basketball/stats/processor/TimeChunkProcessor.java" relSourcepath="basketball\stats\processor\TimeChunkProcessor.java">
+      <Message>At TimeChunkProcessor.java:[line 95]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" instanceHash="8d50c29fe9b7ac680cf507e2c1a0d66d" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="19">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in basketball.stats.processor.utils.ProcessingUtils.buildLogEntries(String): new java.util.Scanner(File)</LongMessage>
+    <Class classname="basketball.stats.processor.utils.ProcessingUtils" primary="true">
+      <SourceLine classname="basketball.stats.processor.utils.ProcessingUtils" start="18" end="234" sourcefile="ProcessingUtils.java" sourcepath="basketball/stats/processor/utils/ProcessingUtils.java" relSourcepath="basketball\stats\processor\utils\ProcessingUtils.java">
+        <Message>At ProcessingUtils.java:[lines 18-234]</Message>
+      </SourceLine>
+      <Message>In class basketball.stats.processor.utils.ProcessingUtils</Message>
+    </Class>
+    <Method classname="basketball.stats.processor.utils.ProcessingUtils" name="buildLogEntries" signature="(Ljava/lang/String;)Ljava/util/List;" isStatic="true" primary="true">
+      <SourceLine classname="basketball.stats.processor.utils.ProcessingUtils" start="58" end="88" startBytecode="0" endBytecode="934" sourcefile="ProcessingUtils.java" sourcepath="basketball/stats/processor/utils/ProcessingUtils.java" relSourcepath="basketball\stats\processor\utils\ProcessingUtils.java"/>
+      <Message>In method basketball.stats.processor.utils.ProcessingUtils.buildLogEntries(String)</Message>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner" start="656" end="657" startBytecode="0" endBytecode="43" sourcefile="Scanner.java" sourcepath="java/util/Scanner.java"/>
+      <Message>Called method new java.util.Scanner(File)</Message>
+    </Method>
+    <SourceLine classname="basketball.stats.processor.utils.ProcessingUtils" primary="true" start="60" end="60" startBytecode="22" endBytecode="22" sourcefile="ProcessingUtils.java" sourcepath="basketball/stats/processor/utils/ProcessingUtils.java" relSourcepath="basketball\stats\processor\utils\ProcessingUtils.java">
+      <Message>At ProcessingUtils.java:[line 60]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="STYLE">
+    <Description>Dodgy code</Description>
+  </BugCategory>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion, and will assume that the default platform encoding is suitable. This will cause the application behaviour to vary between platforms. Use an alternative API and specify a charset name or Charset object explicitly.  </p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugPattern type="BC_IMPOSSIBLE_CAST" abbrev="BC" category="CORRECTNESS" cweid="570">
+    <ShortDescription>Impossible cast</ShortDescription>
+    <Details><![CDATA[
+
+<p>
+This cast will always throw a ClassCastException.
+FindBugs tracks type information from instanceof checks,
+and also uses more precise information about the types
+of values returned from methods and loaded from fields.
+Thus, it may have more precise information that just
+the declared type of a variable, and can use this to determine
+that a cast will always throw an exception at runtime.
+
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_STRING_CTOR" abbrev="Dm" category="PERFORMANCE">
+    <ShortDescription>Method invokes inefficient new String(String) constructor</ShortDescription>
+    <Details><![CDATA[
+
+  <p> Using the <code>java.lang.String(String)</code> constructor wastes memory
+  because the object so constructed will be functionally indistinguishable
+  from the <code>String</code> passed as a parameter.&nbsp; Just use the
+  argument <code>String</code> directly.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DLS_DEAD_LOCAL_STORE" abbrev="DLS" category="STYLE">
+    <ShortDescription>Dead store to local variable</ShortDescription>
+    <Details><![CDATA[
+
+<p>
+This instruction assigns a value to a local variable,
+but the value is not read or used in any subsequent instruction.
+Often, this indicates an error, because the value computed is never
+used.
+</p>
+<p>
+Note that Sun's javac compiler often generates dead stores for
+final local variables.  Because FindBugs is a bytecode-based tool,
+there is no easy way to eliminate these false positives.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="DMI_HARDCODED_ABSOLUTE_FILENAME" abbrev="DMI" category="STYLE">
+    <ShortDescription>Code contains a hard coded reference to an absolute pathname</ShortDescription>
+    <Details><![CDATA[
+
+<p>This code constructs a File object using a hard coded to an absolute pathname
+(e.g., <code>new File("/home/dannyc/workspace/j2ee/src/share/com/sun/enterprise/deployment");</code>
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Dubious method used</Description>
+  </BugCode>
+  <BugCode abbrev="BC">
+    <Description>Bad casts of object references</Description>
+  </BugCode>
+  <BugCode abbrev="DLS" cweid="563">
+    <Description>Dead local store</Description>
+  </BugCode>
+  <BugCode abbrev="DMI" cweid="440">
+    <Description>Dubious method invocation</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 10 Mar 2013 11:54:41 -0500" total_classes="21" referenced_classes="65" total_bugs="14" total_size="1419" num_packages="4" vm_version="23.0-b21" cpu_seconds="4.54" clock_seconds="1.60" peak_mbytes="1317.92" alloc_mbytes="3623.12" gc_seconds="0.00" priority_2="2" priority_1="12">
+    <FileStats path="basketball/stats/chunker/Chunker.java" bugCount="0" size="2"/>
+    <FileStats path="basketball/stats/chunker/EntityChunker.java" bugCount="0" size="9"/>
+    <FileStats path="basketball/stats/chunker/GameTimeChunker.java" bugCount="0" size="10"/>
+    <FileStats path="basketball/stats/chunker/GameTimePlayerStatsEntityChunker.java" bugCount="0" size="10"/>
+    <FileStats path="basketball/stats/chunker/MultiManChunker.java" bugCount="0" size="15"/>
+    <FileStats path="basketball/stats/chunker/PlayerStatsChunker.java" bugCount="0" size="1"/>
+    <FileStats path="basketball/stats/chunker/PlayerStatsEntityChunker.java" bugCount="0" size="264"/>
+    <FileStats path="basketball/stats/models/Chunk.java" bugCount="0" size="1"/>
+    <FileStats path="basketball/stats/models/Entity.java" bugCount="0" size="13"/>
+    <FileStats path="basketball/stats/models/EntityChunk.java" bugCount="1" size="22" bugHash="88192ed54670b8503e3d7d84137c6048"/>
+    <FileStats path="basketball/stats/models/GameGrouping.java" bugCount="0" size="57"/>
+    <FileStats path="basketball/stats/models/LogEntry.java" bugCount="0" size="96"/>
+    <FileStats path="basketball/stats/models/StatisticKey.java" bugCount="0" size="13"/>
+    <FileStats path="basketball/stats/models/StatsChunk.java" bugCount="1" size="301" bugHash="5c616dc487d757d499aa0a34b30a0bf2"/>
+    <FileStats path="basketball/stats/models/TimeDivision.java" bugCount="0" size="61"/>
+    <FileStats path="basketball/stats/processor/ChunkProcessor.java" bugCount="0" size="1"/>
+    <FileStats path="basketball/stats/processor/LogProcessor.java" bugCount="0" size="19"/>
+    <FileStats path="basketball/stats/processor/TimeChunkProcessor.java" bugCount="11" size="265" bugHash="77f6ea4d65e2618d89340cac05ee8e68"/>
+    <FileStats path="basketball/stats/processor/utils/BoxScore.java" bugCount="0" size="47"/>
+    <FileStats path="basketball/stats/processor/utils/EntityChunkProcessor.java" bugCount="0" size="47"/>
+    <FileStats path="basketball/stats/processor/utils/ProcessingUtils.java" bugCount="1" size="165" bugHash="c8381a6071f7157bd1f4685ceac4ee03"/>
+    <PackageStats package="basketball.stats.chunker" total_bugs="0" total_types="7" total_size="311">
+      <ClassStats class="basketball.stats.chunker.Chunker" sourceFile="Chunker.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="basketball.stats.chunker.EntityChunker" sourceFile="EntityChunker.java" interface="true" size="9" bugs="0"/>
+      <ClassStats class="basketball.stats.chunker.GameTimeChunker" sourceFile="GameTimeChunker.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="basketball.stats.chunker.GameTimePlayerStatsEntityChunker" sourceFile="GameTimePlayerStatsEntityChunker.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="basketball.stats.chunker.MultiManChunker" sourceFile="MultiManChunker.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="basketball.stats.chunker.PlayerStatsChunker" sourceFile="PlayerStatsChunker.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="basketball.stats.chunker.PlayerStatsEntityChunker" sourceFile="PlayerStatsEntityChunker.java" interface="false" size="264" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="basketball.stats.models" total_bugs="2" total_types="8" total_size="564" priority_2="1" priority_1="1">
+      <ClassStats class="basketball.stats.models.Chunk" sourceFile="Chunk.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="basketball.stats.models.Entity" sourceFile="Entity.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="basketball.stats.models.EntityChunk" sourceFile="EntityChunk.java" interface="false" size="22" bugs="1" priority_1="1"/>
+      <ClassStats class="basketball.stats.models.GameGrouping" sourceFile="GameGrouping.java" interface="false" size="57" bugs="0"/>
+      <ClassStats class="basketball.stats.models.LogEntry" sourceFile="LogEntry.java" interface="false" size="96" bugs="0"/>
+      <ClassStats class="basketball.stats.models.StatisticKey" sourceFile="StatisticKey.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="basketball.stats.models.StatsChunk" sourceFile="StatsChunk.java" interface="false" size="301" bugs="1" priority_2="1"/>
+      <ClassStats class="basketball.stats.models.TimeDivision" sourceFile="TimeDivision.java" interface="false" size="61" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="basketball.stats.processor" total_bugs="11" total_types="3" total_size="285" priority_2="1" priority_1="10">
+      <ClassStats class="basketball.stats.processor.ChunkProcessor" sourceFile="ChunkProcessor.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="basketball.stats.processor.LogProcessor" sourceFile="LogProcessor.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="basketball.stats.processor.TimeChunkProcessor" sourceFile="TimeChunkProcessor.java" interface="false" size="265" bugs="11" priority_2="1" priority_1="10"/>
+    </PackageStats>
+    <PackageStats package="basketball.stats.processor.utils" total_bugs="1" total_types="3" total_size="259" priority_1="1">
+      <ClassStats class="basketball.stats.processor.utils.BoxScore" sourceFile="BoxScore.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="basketball.stats.processor.utils.EntityChunkProcessor" sourceFile="EntityChunkProcessor.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="basketball.stats.processor.utils.ProcessingUtils" sourceFile="ProcessingUtils.java" interface="false" size="165" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="135" invocations="157" avgMicrosecondsPerInvocation="865" maxMicrosecondsPerInvocation="41623" standardDeviationMircosecondsPerInvocation="3625"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="104" invocations="157" avgMicrosecondsPerInvocation="664" maxMicrosecondsPerInvocation="18279" standardDeviationMircosecondsPerInvocation="2227"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="99" invocations="158" avgMicrosecondsPerInvocation="632" maxMicrosecondsPerInvocation="30197" standardDeviationMircosecondsPerInvocation="2641"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="99" invocations="157" avgMicrosecondsPerInvocation="631" maxMicrosecondsPerInvocation="32314" standardDeviationMircosecondsPerInvocation="2815"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="82" invocations="158" avgMicrosecondsPerInvocation="522" maxMicrosecondsPerInvocation="17979" standardDeviationMircosecondsPerInvocation="1717"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="74" invocations="463" avgMicrosecondsPerInvocation="159" maxMicrosecondsPerInvocation="358" standardDeviationMircosecondsPerInvocation="66"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="72" invocations="81" avgMicrosecondsPerInvocation="898" maxMicrosecondsPerInvocation="17238" standardDeviationMircosecondsPerInvocation="2186"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="63" invocations="460" avgMicrosecondsPerInvocation="137" maxMicrosecondsPerInvocation="1718" standardDeviationMircosecondsPerInvocation="213"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="54" invocations="65" avgMicrosecondsPerInvocation="840" maxMicrosecondsPerInvocation="8146" standardDeviationMircosecondsPerInvocation="1452"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="51" invocations="65" avgMicrosecondsPerInvocation="790" maxMicrosecondsPerInvocation="7595" standardDeviationMircosecondsPerInvocation="1383"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="47" invocations="157" avgMicrosecondsPerInvocation="302" maxMicrosecondsPerInvocation="5588" standardDeviationMircosecondsPerInvocation="704"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="33" invocations="10" avgMicrosecondsPerInvocation="3347" maxMicrosecondsPerInvocation="6555" standardDeviationMircosecondsPerInvocation="1486"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="33" invocations="157" avgMicrosecondsPerInvocation="212" maxMicrosecondsPerInvocation="13508" standardDeviationMircosecondsPerInvocation="1134"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="31" invocations="157" avgMicrosecondsPerInvocation="201" maxMicrosecondsPerInvocation="10208" standardDeviationMircosecondsPerInvocation="865"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="26" invocations="360" avgMicrosecondsPerInvocation="73" maxMicrosecondsPerInvocation="2384" standardDeviationMircosecondsPerInvocation="156"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="25" invocations="21" avgMicrosecondsPerInvocation="1196" maxMicrosecondsPerInvocation="18287" standardDeviationMircosecondsPerInvocation="4000"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="15" invocations="6208" avgMicrosecondsPerInvocation="2" maxMicrosecondsPerInvocation="91" standardDeviationMircosecondsPerInvocation="6"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNullDeref$CheckCallSitesAndReturnInstructions" totalMilliseconds="15" invocations="157" avgMicrosecondsPerInvocation="97" maxMicrosecondsPerInvocation="3529" standardDeviationMircosecondsPerInvocation="346"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DefaultEncodingDetector" totalMilliseconds="15" invocations="21" avgMicrosecondsPerInvocation="720" maxMicrosecondsPerInvocation="3363" standardDeviationMircosecondsPerInvocation="1090"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.LoadOfKnownNullValue" totalMilliseconds="14" invocations="21" avgMicrosecondsPerInvocation="671" maxMicrosecondsPerInvocation="2743" standardDeviationMircosecondsPerInvocation="978"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="13" invocations="21" avgMicrosecondsPerInvocation="656" maxMicrosecondsPerInvocation="3405" standardDeviationMircosecondsPerInvocation="1003"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadCast2" totalMilliseconds="13" invocations="21" avgMicrosecondsPerInvocation="624" maxMicrosecondsPerInvocation="7895" standardDeviationMircosecondsPerInvocation="1675"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="12" invocations="65" avgMicrosecondsPerInvocation="196" maxMicrosecondsPerInvocation="1467" standardDeviationMircosecondsPerInvocation="290"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.1" sequence="0" timestamp="1362934478661" analysisTimestamp="1362934493979" release="">
+  <Project>
+    <Jar>C:\Workspace\basketball-stats-parent\basketball-stats-utils\target\classes</Jar>
+    <AuxClasspathEntry>C:\Users\ANONYM~1\AppData\Local\Temp\findbugs5960005399604009368.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\ANONYM~1\AppData\Local\Temp\findbugs6089479312823161549.jar</AuxClasspathEntry>
+    <SrcDir>C:\Workspace\basketball-stats-parent\basketball-stats-utils\src\main\java</SrcDir>
+    <WrkDir>C:\Workspace\basketball-stats-parent\basketball-stats-utils\target</WrkDir>
+  </Project>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Bx" category="PERFORMANCE" instanceHash="9f6b0631ed4940fcda4f5d5ce3ac44b0" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="18">
+    <ShortMessage>Method invokes inefficient Number constructor; use static valueOf instead</ShortMessage>
+    <LongMessage>basketball.stats.util.GameTime.compareTo(GameTime) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</LongMessage>
+    <Class classname="basketball.stats.util.GameTime" primary="true">
+      <SourceLine classname="basketball.stats.util.GameTime" start="3" end="178" sourcefile="GameTime.java" sourcepath="basketball/stats/util/GameTime.java" relSourcepath="basketball\stats\util\GameTime.java">
+        <Message>At GameTime.java:[lines 3-178]</Message>
+      </SourceLine>
+      <Message>In class basketball.stats.util.GameTime</Message>
+    </Class>
+    <Method classname="basketball.stats.util.GameTime" name="compareTo" signature="(Lbasketball/stats/util/GameTime;)I" isStatic="false" primary="true">
+      <SourceLine classname="basketball.stats.util.GameTime" start="28" end="35" startBytecode="0" endBytecode="173" sourcefile="GameTime.java" sourcepath="basketball/stats/util/GameTime.java" relSourcepath="basketball\stats\util\GameTime.java"/>
+      <Message>In method basketball.stats.util.GameTime.compareTo(GameTime)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="&lt;init&gt;" signature="(I)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="659" end="661" startBytecode="0" endBytecode="41" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Called method new Integer(int)</Message>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)V" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Integer" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+      <Message>Should call Integer.valueOf(int) instead</Message>
+    </Method>
+    <SourceLine classname="basketball.stats.util.GameTime" primary="true" start="32" end="32" startBytecode="45" endBytecode="45" sourcefile="GameTime.java" sourcepath="basketball/stats/util/GameTime.java" relSourcepath="basketball\stats\util\GameTime.java">
+      <Message>At GameTime.java:[line 32]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="RC_REF_COMPARISON" priority="1" abbrev="RC" category="CORRECTNESS" instanceHash="947c00678726e5778d9b1ef384c711c" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="1">
+    <ShortMessage>Suspicious reference comparison</ShortMessage>
+    <LongMessage>Suspicious comparison of Integer references in basketball.stats.util.GameTime.compareTo(GameTime)</LongMessage>
+    <Class classname="basketball.stats.util.GameTime" primary="true">
+      <SourceLine classname="basketball.stats.util.GameTime" start="3" end="178" sourcefile="GameTime.java" sourcepath="basketball/stats/util/GameTime.java" relSourcepath="basketball\stats\util\GameTime.java">
+        <Message>At GameTime.java:[lines 3-178]</Message>
+      </SourceLine>
+      <Message>In class basketball.stats.util.GameTime</Message>
+    </Class>
+    <Method classname="basketball.stats.util.GameTime" name="compareTo" signature="(Lbasketball/stats/util/GameTime;)I" isStatic="false" primary="true">
+      <SourceLine classname="basketball.stats.util.GameTime" start="28" end="35" startBytecode="0" endBytecode="36" sourcefile="GameTime.java" sourcepath="basketball/stats/util/GameTime.java" relSourcepath="basketball\stats\util\GameTime.java"/>
+      <Message>In method basketball.stats.util.GameTime.compareTo(GameTime)</Message>
+    </Method>
+    <Type descriptor="Ljava/lang/Integer;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.Integer" start="52" end="1236" sourcefile="Integer.java" sourcepath="java/lang/Integer.java">
+        <Message>At Integer.java:[lines 52-1236]</Message>
+      </SourceLine>
+      <Message>Actual type Integer</Message>
+    </Type>
+    <LocalVariable name="secondTotalSeconds" register="3" pc="33" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from secondTotalSeconds</Message>
+    </LocalVariable>
+    <LocalVariable name="totalSeconds" register="2" pc="33" role="LOCAL_VARIABLE_VALUE_OF">
+      <Message>Value loaded from totalSeconds</Message>
+    </LocalVariable>
+    <SourceLine classname="basketball.stats.util.GameTime" primary="true" start="31" end="31" startBytecode="34" endBytecode="34" sourcefile="GameTime.java" sourcepath="basketball/stats/util/GameTime.java" relSourcepath="basketball\stats\util\GameTime.java">
+      <Message>At GameTime.java:[line 31]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="VA_FORMAT_STRING_BAD_CONVERSION" priority="1" abbrev="FS" category="CORRECTNESS" instanceHash="b1deb499555cb5cbe9988cd54d22d532" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="7">
+    <ShortMessage>The type of a supplied argument doesn&apos;t match format specifier</ShortMessage>
+    <LongMessage>Argument of type String can&apos;t be handled by format specifier %02d in basketball.stats.util.GameTime.formatRealTime(String, String, String)</LongMessage>
+    <Class classname="basketball.stats.util.GameTime" primary="true">
+      <SourceLine classname="basketball.stats.util.GameTime" start="3" end="178" sourcefile="GameTime.java" sourcepath="basketball/stats/util/GameTime.java" relSourcepath="basketball\stats\util\GameTime.java">
+        <Message>At GameTime.java:[lines 3-178]</Message>
+      </SourceLine>
+      <Message>In class basketball.stats.util.GameTime</Message>
+    </Class>
+    <Method classname="basketball.stats.util.GameTime" name="formatRealTime" signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" isStatic="true" primary="true">
+      <SourceLine classname="basketball.stats.util.GameTime" start="39" end="39" startBytecode="0" endBytecode="123" sourcefile="GameTime.java" sourcepath="basketball/stats/util/GameTime.java" relSourcepath="basketball\stats\util\GameTime.java"/>
+      <Message>In method basketball.stats.util.GameTime.formatRealTime(String, String, String)</Message>
+    </Method>
+    <Method classname="java.lang.String" name="format" signature="(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="2845" end="2845" startBytecode="0" endBytecode="39" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.format(String, Object[])</Message>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="110" end="3049" sourcefile="String.java" sourcepath="java/lang/String.java">
+        <Message>At String.java:[lines 110-3049]</Message>
+      </SourceLine>
+      <Message>Actual type String</Message>
+    </Type>
+    <String value="%02d" role="STRING_FORMAT_SPECIFIER">
+      <Message>Format specifier &quot;%02d&quot;</Message>
+    </String>
+    <String value="%02d" role="STRING_FORMAT_STRING">
+      <Message>Format string &quot;%02d&quot;</Message>
+    </String>
+    <LocalVariable name="totalMinutes" register="0" pc="22" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named totalMinutes</Message>
+    </LocalVariable>
+    <SourceLine classname="basketball.stats.util.GameTime" primary="true" start="39" end="39" startBytecode="22" endBytecode="22" sourcefile="GameTime.java" sourcepath="basketball/stats/util/GameTime.java" relSourcepath="basketball\stats\util\GameTime.java">
+      <Message>At GameTime.java:[line 39]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="VA_FORMAT_STRING_BAD_CONVERSION" priority="1" abbrev="FS" category="CORRECTNESS" instanceHash="c0a2e495bf9df6b948c5a735f514f50f" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="7">
+    <ShortMessage>The type of a supplied argument doesn&apos;t match format specifier</ShortMessage>
+    <LongMessage>Argument of type String can&apos;t be handled by format specifier %02d in basketball.stats.util.GameTime.formatRealTime(String, String, String)</LongMessage>
+    <Class classname="basketball.stats.util.GameTime" primary="true">
+      <SourceLine classname="basketball.stats.util.GameTime" start="3" end="178" sourcefile="GameTime.java" sourcepath="basketball/stats/util/GameTime.java" relSourcepath="basketball\stats\util\GameTime.java">
+        <Message>At GameTime.java:[lines 3-178]</Message>
+      </SourceLine>
+      <Message>In class basketball.stats.util.GameTime</Message>
+    </Class>
+    <Method classname="basketball.stats.util.GameTime" name="formatRealTime" signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" isStatic="true" primary="true">
+      <SourceLine classname="basketball.stats.util.GameTime" start="39" end="39" startBytecode="0" endBytecode="123" sourcefile="GameTime.java" sourcepath="basketball/stats/util/GameTime.java" relSourcepath="basketball\stats\util\GameTime.java"/>
+      <Message>In method basketball.stats.util.GameTime.formatRealTime(String, String, String)</Message>
+    </Method>
+    <Method classname="java.lang.String" name="format" signature="(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="2845" end="2845" startBytecode="0" endBytecode="39" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+      <Message>Called method String.format(String, Object[])</Message>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="110" end="3049" sourcefile="String.java" sourcepath="java/lang/String.java">
+        <Message>At String.java:[lines 110-3049]</Message>
+      </SourceLine>
+      <Message>Actual type String</Message>
+    </Type>
+    <String value="%02d" role="STRING_FORMAT_SPECIFIER">
+      <Message>Format specifier &quot;%02d&quot;</Message>
+    </String>
+    <String value="%02d" role="STRING_FORMAT_STRING">
+      <Message>Format string &quot;%02d&quot;</Message>
+    </String>
+    <LocalVariable name="totalSeconds" register="1" pc="43" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named totalSeconds</Message>
+    </LocalVariable>
+    <SourceLine classname="basketball.stats.util.GameTime" primary="true" start="39" end="39" startBytecode="43" endBytecode="43" sourcefile="GameTime.java" sourcepath="basketball/stats/util/GameTime.java" relSourcepath="basketball\stats\util\GameTime.java">
+      <Message>At GameTime.java:[line 39]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="RC_REF_COMPARISON" abbrev="RC" category="CORRECTNESS">
+    <ShortDescription>Suspicious reference comparison</ShortDescription>
+    <Details><![CDATA[
+
+<p> This method compares two reference values using the == or != operator,
+where the correct way to compare instances of this type is generally
+with the equals() method.
+It is possible to create distinct instances that are equal but do not compare as == since
+they are different objects.
+Examples of classes which should generally
+not be compared by reference are java.lang.Integer, java.lang.Float, etc.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="VA_FORMAT_STRING_BAD_CONVERSION" abbrev="FS" category="CORRECTNESS">
+    <ShortDescription>The type of a supplied argument doesn&apos;t match format specifier</ShortDescription>
+    <Details><![CDATA[
+
+<p>
+One of the arguments is uncompatible with the corresponding format string specifier.
+As a result, this will generate a runtime exception when executed.
+For example, <code>String.format("%d", "1")</code> will generate an exception, since
+the String "1" is incompatible with the format specifier %d.
+</p>
+
+     ]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_NUMBER_CTOR" abbrev="Bx" category="PERFORMANCE">
+    <ShortDescription>Method invokes inefficient Number constructor; use static valueOf instead</ShortDescription>
+    <Details><![CDATA[
+      
+      <p>
+      Using <code>new Integer(int)</code> is guaranteed to always result in a new object whereas
+      <code>Integer.valueOf(int)</code> allows caching of values to be done by the compiler, class library, or JVM.
+      Using of cached values avoids object allocation and the code will be faster.
+      </p>
+      <p>
+      Values between -128 and 127 are guaranteed to have corresponding cached instances
+      and using <code>valueOf</code> is approximately 3.5 times faster than using constructor.
+      For values outside the constant range the performance of both styles is the same.
+      </p>
+      <p>
+      Unless the class must be compatible with JVMs predating Java 1.5,
+      use either autoboxing or the <code>valueOf()</code> method when creating instances of
+      <code>Long</code>, <code>Integer</code>, <code>Short</code>, <code>Character</code>, and <code>Byte</code>.
+      </p>
+      
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="FS">
+    <Description>Format string problem</Description>
+  </BugCode>
+  <BugCode abbrev="Bx">
+    <Description>Questionable Boxing of primitive value</Description>
+  </BugCode>
+  <BugCode abbrev="RC">
+    <Description>Questionable use of reference equality rather than calling equals</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 10 Mar 2013 11:54:38 -0500" total_classes="1" referenced_classes="11" total_bugs="4" total_size="101" num_packages="1" vm_version="23.0-b21" cpu_seconds="1.50" clock_seconds="0.51" peak_mbytes="665.93" alloc_mbytes="3623.12" gc_seconds="0.00" priority_2="1" priority_1="3">
+    <FileStats path="basketball/stats/util/GameTime.java" bugCount="4" size="101" bugHash="05f1e12b806837fc1934c7f843f9828d"/>
+    <PackageStats package="basketball.stats.util" total_bugs="4" total_types="1" total_size="101" priority_2="1" priority_1="3">
+      <ClassStats class="basketball.stats.util.GameTime" sourceFile="GameTime.java" interface="false" size="101" bugs="4" priority_2="1" priority_1="3"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="62" invocations="282" avgMicrosecondsPerInvocation="220" maxMicrosecondsPerInvocation="2384" standardDeviationMircosecondsPerInvocation="319"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="49" invocations="283" avgMicrosecondsPerInvocation="175" maxMicrosecondsPerInvocation="338" standardDeviationMircosecondsPerInvocation="53"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="23" invocations="11" avgMicrosecondsPerInvocation="2133" maxMicrosecondsPerInvocation="7453" standardDeviationMircosecondsPerInvocation="2625"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ExplicitSerialization" totalMilliseconds="19" invocations="11" avgMicrosecondsPerInvocation="1756" maxMicrosecondsPerInvocation="6199" standardDeviationMircosecondsPerInvocation="2098"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="18" invocations="274" avgMicrosecondsPerInvocation="66" maxMicrosecondsPerInvocation="691" standardDeviationMircosecondsPerInvocation="97"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="15" invocations="26" avgMicrosecondsPerInvocation="579" maxMicrosecondsPerInvocation="1838" standardDeviationMircosecondsPerInvocation="540"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="13" invocations="11" avgMicrosecondsPerInvocation="1208" maxMicrosecondsPerInvocation="4126" standardDeviationMircosecondsPerInvocation="1374"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

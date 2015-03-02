@@ -1,0 +1,14 @@
+Steals are part of the stolen team's shot clock and possession.
+
+# END OF POSSESSION SIGNALERS
+Steals.
+Possession is DEFENSE and a rebound is grabbed.
+Possession is OFFENSE and misses a shot and next entry possession is DEFENSE (also indicates an opposing team rebound).
+Possession is OFFENSE and my player commits a foul.
+A shot is made and possession flips on next entry.
+Made or missed free throw is followed by possession change.
+
+
+# Opposing team rebound.
+Possession is OFFENSE and misses a shot and next entry possession is DEFENSE 
+Possession is DEFENSE when a shot is missed and next entry is not DEFENSE with REBOUND or TEAM_REBOUND.

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/basketball-stats_basketball-stats/!svn/ver/64/trunk/basketball-stats-parent/basketball-stats-processing/src/main/java/basketball/stats/models
+END
+StatisticKey.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/basketball-stats_basketball-stats/!svn/ver/62/trunk/basketball-stats-parent/basketball-stats-processing/src/main/java/basketball/stats/models/StatisticKey.java
+END
+LogEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/basketball-stats_basketball-stats/!svn/ver/42/trunk/basketball-stats-parent/basketball-stats-processing/src/main/java/basketball/stats/models/LogEntry.java
+END
+StatsChunk.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/basketball-stats_basketball-stats/!svn/ver/42/trunk/basketball-stats-parent/basketball-stats-processing/src/main/java/basketball/stats/models/StatsChunk.java
+END
+Chunk.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/basketball-stats_basketball-stats/!svn/ver/43/trunk/basketball-stats-parent/basketball-stats-processing/src/main/java/basketball/stats/models/Chunk.java
+END
+TimeDivision.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/basketball-stats_basketball-stats/!svn/ver/42/trunk/basketball-stats-parent/basketball-stats-processing/src/main/java/basketball/stats/models/TimeDivision.java
+END
+EntityChunk.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/svn/basketball-stats_basketball-stats/!svn/ver/64/trunk/basketball-stats-parent/basketball-stats-processing/src/main/java/basketball/stats/models/EntityChunk.java
+END
+GameGrouping.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/basketball-stats_basketball-stats/!svn/ver/42/trunk/basketball-stats-parent/basketball-stats-processing/src/main/java/basketball/stats/models/GameGrouping.java
+END
+Entity.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/basketball-stats_basketball-stats/!svn/ver/62/trunk/basketball-stats-parent/basketball-stats-processing/src/main/java/basketball/stats/models/Entity.java
+END
