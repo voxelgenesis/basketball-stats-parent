@@ -1,1 +1,3 @@
 # basketball-stats-parent
+
+I made this project as a way of collecting, storing, and using data gathered from playing basketball video games. I was unhappy with the stats provided by the game (NBA 2K14) so I wanted more. This is currently set up to track time, shot location, deflections, and the regular stats. Of course, the only way to get the raw data is to input it by either pausing or reviewing a recorded game (I used Hauppage HD PVR). This worked great and gave me the data I wanted and would have allowed me to go into great detail with stats (plus/minus with particular groups, streaks, time/day/month breakdowns, and a lot more). Unfortunately, for a regulation game, this easily takes two hours to input, which is why I only ever got to 4 games. Haha.
