@@ -2,3 +2,6 @@
 /.settings
 /.svn
 /.project
+/bin
+bin/
+target/
